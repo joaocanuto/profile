@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	color: $font-color;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+	font-size: 1em;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+	font-weight: 600;
+	color: $heading-font-color;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+	line-height: 1.5;
+}
+h1 {
+	color: $main;
+	font-size: 2em;
+	a,
+	a:visited {
+		text-decoration: none;
+		color: $main;
+	}
+}
+h2 {
+	font-size: 2em;
+}
+a,
+a:visited {
+	color: $link-color;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a:hover {
+	color: $link-hover-color;
+	text-decoration: underline;
+}
+header {
+	background: $header;
+	padding: 0px 15px;
+	text-align: left;
+	margin: 0px 0 0;
+	font-size: 1.8em;
+	height: 80px;
+  width: 100%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+main {
+	padding: 0 15px;
+	max-width: $content-width;
+	margin: 0 auto;
+}
+time {
+	color: #898989;
+}
+.container {
+	max-width: $content-width;
+	margin: 0 auto;
+}
+
+/* Aside */
+
+aside {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	z-index: 2;
+	border-bottom: 1px solid lighten($light, 30%);
+	box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
+	nav {
+		float: left;
+		max-width: 800px;
+		margin: 0 auto;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				float: left;
+				position: relative;
+				a {
+					text-decoration: none;
+					display: block;
+					padding: 15px;
+          font-family: "Helvetica Neue", Arial, sans-serif;
+
+					line-height: 20px;
+					margin-bottom: -1px;
+					box-shadow: 0;
+					&:hover,
+					&:active {
+						background: $header;
+						text-decoration: none;
+						color: $main;
+					}
+				}
+			}
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+}
+footer {
+	text-align: center;
+	padding: 40px;
+}
+
+.post-card {
+  border: 1px solid lighten($header, 20%); // borda sutil
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: lighten($light, 20%);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  border-radius: 8px; // bordas arredondadas
+  
+  // opcional para alinhar texto
+  time, h3 {
+    display: block;
+  }
+}
+.post-card:hover {
+  border-color: $main; // cor principal definida em _base.scss
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: lighten($light, 5%);
+}
+
+body, .post-card, h4 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+article {
+  font-size: 1.2em;  // ou o valor que quiser
+  line-height: 1.7;  // opcional, para melhorar legibilidade
+}
