@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introdução a Algoritmos e Strings em C++"
+title: "Introdução a Algoritmos em Strings em C++"
 date: 2025-05-09
 categories: [algoritmos, c++, programação]
 ---
@@ -37,7 +37,7 @@ Marquei e descrevi a estrutura comum de um problema que encontramos em competiç
 	* Descreve o tempo máximo que nosso algoritmo pode executar no pior caso do problema. Que geralmente é quando todas as *constraints* estão no limite, nesse exemplo seria um caso em que n = m = 10ˆ6.
 * *Memory limit*: 512 MB
 	* Tal qual o *time limit*, descreve o caso de uso máximo do problema, mas no contexto do uso de memoria. 
-	* A cada 20 problemas que recebo um *TLE(time limit exceeded)*, recebo 1 de *MLE(Memory limit exceeded)* referente a extourar a memoria do problema. 
+	* A cada 20 problemas que recebo um *TLE(time limit exceeded)*, recebo 1 de *MLE(Memory limit exceeded)* referente a estourar a memoria do problema. 
 * *Constraints*: 1 <= n,m <= 10ˆ6 
 Nesse problema, vou mostrar o resultados de duas soluções que submeti para o problema. 
 Inicialmente, uma solução que resolve o problema, mas tem um pessima complexidade O(nˆ2).
@@ -53,13 +53,13 @@ Pronto, testamos no primeiro caso, e aparentemente funciona. De certa forma, mas
 ![My helpful screenshot 2](/assets/2025-05-09-Introduçao-a-Algoritmos-e-Strings-em-C++/S3.png)
 
 Famoso *TLE*!! 
-Aqui vai um disclaimer sobre um ponto importante sobre o que esse tempo significa. Você pode tentar comparar a execução do código na sua máquina, mas o resultado vai dar bem diferente do tempo obtido quando seu código é avaliado pelo *judge*. Isso acontece pq seu código roda em um ambiente muito mais limitado que o que você tem dísponível.
+Aqui vai um disclaimer sobre um ponto importante sobre o que esse tempo significa. Você pode tentar comparar a execução do código na sua máquina, mas vai ser bem diferente do tempo obtido quando seu código é avaliado pelo *judge*. Isso acontece pq seu código roda em um ambiente muito mais limitado que o que você tem disponível.
 
 Dessa forma, quando nos referirmos a Tempo de Execução, temos mais ou menos uma noção de tempo para seu código executar, digamos N operações. 
-* 1s -> 1e6 operaões
+* 1s -> 1e6 operações
 * 2s -> 2e6 operações
 .... e segue de maneira linear. 
-Em nosso exemplo, usamos o *cses*, que tem um padrão parecido, e em nosso caso, a complexidade do nosso código ficou na ordem de O(*n*ˆ2), com *n* no pior caso (*n* == 1e6), precisariamos de 1.000.000 de segundos ? 
+Em nosso exemplo, usamos o *CSES*, que tem um padrão parecido, e em nosso caso, a complexidade do nosso código ficou na ordem de O(*n*ˆ2), com *n* no pior caso (*n* == 1e6), precisariamos de 1.000.000 de segundos ? 
 Acredito que algo em torno de disso, pensando no pior do pior dos casos.
 * Outro disclamer : Essa é uma estimativa grosseira e pode variar dependendo da linguagem usada, otimizações do compilador, tipo de operações (operações em inteiros são mais rápidas que operações em strings, por exemplo).
 
