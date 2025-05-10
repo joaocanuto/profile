@@ -73,6 +73,7 @@ Utilizar estruturas e algoritmos eficientes para encontrar substrings repetidas 
 
 ### Resolvendo nosso problema de Tempo:
 Vamos adaptar nosso código para um algoritmo mais eficiente , utilizaremos o Z-Algorithm: 
+
 ```cpp
 
 #include <bits/stdc++.h>
