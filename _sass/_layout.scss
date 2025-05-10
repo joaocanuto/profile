@@ -144,8 +144,10 @@ article {
 }
 
 img {
-  max-width: 70%;
+  max-width: 85%;
   height: auto;
   display: block;
   margin: 1rem auto;
+  border-radius: 8px; 
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* sombra sutil (opcional) */
 }
