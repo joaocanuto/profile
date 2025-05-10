@@ -19,11 +19,15 @@ A estrutura típica de um algoritmo envolve:
 # Complexidade de um Algoritmo
 A **complexidade** de um algoritmo é um conceito que usamos para medir o uso de recursos principalmente tempo (tempo de execução) e espaço (memória), em função do tamanho da entrada.
 Na maior parte dos problemas de programação competitiva, exploramos principalmente o tempo de execução quando desenvolvemos alguma solução. 
-Nesse contexto, nos problemas é dado um tempo máximo que seu código ( algoritmo ) deve entregar uma solução no pior dos casos do problema. 
+Nesse contexto, nos problemas é dado um tempo máximo que seu código ( algoritmo ) deve entregar uma solução no pior dos casos do problema.
+
 ### Definição : 
+
 - **Complexidade de tempo:** Quantifica quantas operações o algoritmo realiza em função do tamanho da entrada ( n ).
 - **Complexidade de espaço:** Quantifica a quantidade de memória adicional que o algoritmo utiliza.
+
 ## Quando importa saber da complexidade ? 
+
 Dado o problema:
 
 ![My helpful screenshot](/assets/2025-05-09-Introduçao-a-Algoritmos-e-Strings-em-C++/S7.jpg)
@@ -61,6 +65,7 @@ Acredito que algo em torno de disso, pensando no pior do pior dos casos.
 
 
 ## Precisamos melhorar a complexidade 
+
 Enxergamos nesse caso que nosso algoritmo não atendeu ao tempo limite da questão, então precisamos adaptar o código. 
 Esse caso de otimização conseguimos encontrar alguns casos de uso, exemplo:
 * Busca de padrões em grandes textos (ex: motores de busca, como google).
@@ -68,10 +73,13 @@ Esse caso de otimização conseguimos encontrar alguns casos de uso, exemplo:
 * Processamento de logs em tempo real
 * Compressão de dados
 * Detecção de plágio em documentos
+
 ### Solução : 
+
 Utilizar estruturas e algoritmos eficientes para encontrar substrings repetidas rapidamente, como o array Z. Em todos esses casos, a melhoria da complexidade do algoritmo é importante para garantir que o código execute dentro dos limites de tempo, especialmente quando lidamos com grandes volumes de dados. Adaptar o código para usar algoritmos eficientes não é apenas uma questão de performance, mas muitas vezes uma necessidade para viabilizar a solução do problema.
 
 ### Resolvendo nosso problema de Tempo:
+
 Vamos adaptar nosso código para um algoritmo mais eficiente , utilizaremos o Z-Algorithm: 
 
 ```cpp
@@ -143,11 +151,13 @@ Coloquei o input em um contador de carateres e temos *n* = 1.000.000 e *m* = 1.0
 # Strings em C++:
 
 Finalizando complexidade, vamos cobrir a base de Strings que irá ser útil para servir de base para explorararmos nos próximos artigos e enxergarmos como algumas operações básicas, fornecidades na biblioteca padrão de *strings* em *C++*, tem complexidade alta.
+
 ## O que é uma string?
 
 Em C++, uma **string** é uma sequência de caracteres que representa texto. A biblioteca padrão oferece a classe `std::string`, que facilita a manipulação de textos de forma segura e eficiente.
 
 Desde o C++11, e aprimorada até o C++23, a classe `std::string` é amplamente utilizada por sua facilidade de uso e integração com outras partes da linguagem.
+
 ## Operações comuns em strings
 
 Algumas das operações mais comuns com strings em C++23 incluem:
