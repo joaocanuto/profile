@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Introdução a Algoritmos e Strings em C++"
+date: 2025-05-09
+categories: [algoritmos, c++, programação]
+---
+
+
 # Algoritmos 
 ### Definição : 
 Um **algoritmo** é uma sequência finita de passos bem definidos para resolver um problema ou realizar uma tarefa. Na ciência da computação, algoritmos são essenciais para manipular dados, realizar cálculos, buscar informações e muito mais.

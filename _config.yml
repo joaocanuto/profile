@@ -27,6 +27,9 @@ sass:
   sass_dir: _sass
 include: ["_pages"]
 markdown: kramdown
+
+highlighter: rouge
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
