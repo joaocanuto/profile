@@ -142,3 +142,10 @@ article {
   font-size: 1.2em;  // ou o valor que quiser
   line-height: 1.7;  // opcional, para melhorar legibilidade
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
