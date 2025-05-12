@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Busca em Strings com Algoritmo Z"
-date: 2025-05-09
+date: 2025-05-11
 categories: [algoritmos, c++, programação]
 ---
 
