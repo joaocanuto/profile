@@ -103,7 +103,7 @@ O código ficaria assim:
 ```cpp
 
     ....
-    int maxz = 0
+    int maxz = 0;
     for(int i = 1; i < n; i++){
         ocorrencias[z[i]]++;
         if(z[i] == n - i and maxz >= z[i]){
